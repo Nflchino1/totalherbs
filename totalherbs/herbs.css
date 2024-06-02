@@ -1,0 +1,503 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  
+    
+    
+   
+}
+header{
+    background: linear-gradient(to right, rgb(255, 255, 255),white, rgb(122, 26, 26), rgb(122, 26, 26), rgb(122, 26, 26));
+    z-index: 9999;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+li{
+    list-style: none;
+}
+a{
+
+    color: white;
+    text-decoration: none;
+ 
+}
+li a{
+
+    border-radius: 18px;
+    padding: 8px;
+
+}
+ li a:hover{
+    color: yellow;
+}
+.navbar{
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 24px;
+
+    
+
+
+}
+.nav-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+
+}
+.navbar img{
+
+    height: 60px;
+    width: 60px;
+
+    
+}
+.nav-branding:hover{
+    color: white;
+}
+.nav-links{
+    transition: 0.7s ease;
+}
+.nav-link :hover{
+    color: yellow;
+    
+}
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: aliceblue;
+
+    
+}
+
+@media screen and (max-width: 1000px) {
+    .hamburger{
+        display: block;
+    }
+    .hamburger.active.bar:nth-child(2) {
+    opacity: 0;
+    }
+    .hamburger.active.bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active.bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg)
+    }
+    .nav-menu{
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background: linear-gradient(to right,rgb(122, 26, 26), rgb(122, 26, 26));
+        width: 100%;
+        transition: 0.3s;
+        text-align: center;
+        border: 2px solid white;
+        border-radius: 18px;
+        
+    }        
+    .nav-item{
+        margin: 16px 0;
+    }
+    .nav-menu.active{
+        left: 0;
+    
+    
+    }
+    .line2{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+    
+    .run{
+        display: flex;
+        flex-direction: column;
+     align-items: center;
+    }
+    .impott{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+       padding: 40px;
+
+    }
+    .type1{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .lamp1{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        
+    }
+}
+.red img{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px ;
+}
+.line1{
+    text-align: center;
+    font-size: 18px;
+    padding: 50px;
+    color: rgb(255, 255, 255);
+    border-bottom: 2px solid black;
+    margin-top: 100px;
+    background-color: black;
+}
+.line2{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 40px;
+    
+    border-bottom: 2px solid black;
+
+}
+.line2 img{
+height: 320px;
+width: 290px;
+border-radius: 15px;
+
+}
+.text1 h1{
+    text-align: center;
+    text-decoration: underline;
+}
+.text1 h3{
+    width: 320px;
+    height: 300px;
+    margin-top: 16px;
+   text-align: justify;
+    
+}
+.run h3{
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 25px;
+    width: 200px;
+    font-size: 10px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    
+}
+.line3 h1{
+    font-size: 25px;
+    text-align: center;
+    color: white;
+}
+.line3{
+    margin-top: 20px;
+    padding: 20px;
+    background-color: black;
+    border: 2px solid black;
+}
+.run{
+    justify-content: space-evenly;
+    display: flex;
+    background-color: black;
+  
+}
+.run h3:hover{
+    color: white;
+    background-color: rgb(122, 26, 26);
+}
+
+.pline h1{
+
+    text-align: center;
+    margin-top: 120px;
+    font-size: 23px;
+    background-color: black;
+    padding: 25px;
+    color: white;
+    
+
+}
+.pimg img{
+    height: 300px;
+    width: 300px;
+    
+}
+.pimg{
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    margin: 0 auto;
+    display: flex;
+}
+.impot{
+    text-align: center;
+    font-size: 15px;
+    text-decoration: underline;
+}
+.impott{
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: 2px solid black;
+}
+.impott img{
+    width: 350px;
+    height: 350px;
+   
+
+}
+.impott h3{
+    text-align: justify;
+}
+.type h1{
+    text-align: center;
+text-decoration: underline;
+    font-size: 25px;
+   
+
+padding: 40px;
+}
+.type1 img{
+    height: 280px;
+    width: 280px;
+    border-radius: 30px;
+}
+.type1{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    align-items: center;
+}
+.type1 figcaption{
+    text-align: center;
+   
+    color: white;
+}
+.type1 figure{
+    border: 2px solid black;
+    padding: 15px;
+    border-radius: 30px;
+    background-color: black;
+    width: 320px;
+    height: 350px;
+   
+   
+}
+.type1{
+    border-bottom: 2px solid black;
+    padding-bottom: 30px;
+}
+.lamp{
+    text-align: center;
+    font-size: 10px;
+}
+.lamp1 img{
+    height: 350px;
+    width: 320px;
+    border-radius: 30px;
+}
+.lamp1{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 2px solid black;
+}
+.lamptext h3{
+    text-align: justify;
+    width: 350px;
+    
+
+}
+.lamp h1{
+font-size: 25px;
+text-decoration: underline;
+}
+.order button{
+    padding: 20px;
+    font-size: 6px;
+    color: white;
+    background-color: red;
+    width: 150px;
+    border-radius: 30px;
+    border: 1px solid red;
+    
+}
+.order button:hover{
+    color: white;
+    background-color: blue;
+}
+.order{
+    align-items: center;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    text-align: center;
+}
+.salt h1{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 25px;
+    text-decoration: underline;
+}
+.salty h3{
+    text-align: justify;
+    align-items: center;
+    justify-content: center;
+    width: 400PX;
+}
+
+
+.salty{
+    align-items: center;
+    justify-content: center;
+  margin: 0 auto;
+  display: flex;
+  padding: 25px;
+  border-bottom: 2px solid black;
+  
+}
+
+.line22{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 40px;
+    
+    border-bottom: 2px solid black;
+
+}
+.line21 img{
+height: 320px;
+width: 290px;
+border-radius: 15px;
+
+}
+.text11 h1{
+    text-align: center;
+    text-decoration: underline;
+}
+.text11 h3{
+    width: 320px;
+    height: 300px;
+    margin-top: 16px;
+   text-align: justify;
+    
+}
+.text1 i{
+    font-size: 30px;
+    margin: 6px;
+    text-align: center;
+color: black;
+    padding: 5px;
+    border-radius: 17px;
+
+}
+.text1 i:hover{
+    color: red;
+}
+
+
+
+.red form{
+    
+    
+    
+
+    width: 100%;
+       
+        background-color: black;
+        color: #ccc;
+        padding: 20px;
+        
+        
+      }
+      
+      label {
+        
+        margin-bottom: 10px;
+        
+      }
+      
+      input[type="email"]
+      {
+        width: 240px;
+        padding: 10px;
+        border: 1px solid #332f2f;
+        border-radius: 3px;
+        margin-bottom: 20px;
+        border-style: groove;
+        background-color: rgb(46, 44, 44);
+        color: #ccc;
+      }
+      
+     .red button[type="submit"] {
+        background-color: #ff0000;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+        font-size: 16px;
+        width: 240px;
+      }
+      .feed h1{
+        color: rgb(172, 13, 13);
+        font-size: 36px;
+        text-align: center;
+        background-color: black;
+        padding: 20px;
+        margin-top: 15px;
+    
+      }
+        
+    .map{
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    
+    }
+    iframe{
+        width: 400px;
+        height: 350px;
+        filter: invert(100%);
+    }
+    .locate{
+        text-align: center;
+        padding: 8px;
+    }
+.locate h2{
+    text-decoration: underline;
+}
+.newest{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    gap: 40px;
+    align-items: center;
+}
+.newest img{
+    width: 300px;
+    height: 300px;
+    border-radius: 30px;
+    box-shadow: 2px 2px 2px 2px rgb(211, 177, 177);
+}
